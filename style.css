@@ -1,0 +1,183 @@
+*{margin: 0; padding: 0;}
+
+body{
+    background-color: #f3f3f3;
+}
+
+#mainContent{
+    /* Referência do código do mainContent: https://stackoverflow.com/questions/5012111/how-to-position-a-div-in-the-middle-of-the-screen-when-the-page-is-bigger-than-t */
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    width:54em;
+    height:42em;
+    margin-top: -21em; /*set to a negative number 1/2 of your height*/
+    margin-left: -27em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    background-image: linear-gradient(to top right, #989898, #f3f3f3);
+    border-radius: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #636363
+}
+
+header h1{
+    text-align: center;
+}
+
+#sectionInputText h4{
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input{
+    margin: auto;
+    border: 2px solid #636363;
+    padding: 1px;
+    border-radius: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+#meme-image-container{
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    color: #636363;
+    position: relative;
+    background-color: white;
+}
+
+#meme-image-container div{
+    display: block;
+    position: absolute;
+    max-width: 400px;
+    bottom: 0;
+    text-align: center;
+    /* Referência: https://stackoverflow.com/questions/42693920/force-text-in-a-div-to-break-only-after-it-reaches-to-the-end-of-the-div */
+    overflow: hidden;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word; 
+    /* Referência: https://stackoverflow.com/questions/61754840/how-to-put-a-div-at-the-bottom-center-of-the-container */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Referência: https://stackoverflow.com/questions/2570972/css-font-border */
+    -webkit-text-stroke: 1px black;
+    font-family: sans;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}
+
+#meme-image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: white;
+}
+
+#btnBorders{
+    /* Referência: https://stackoverflow.com/questions/16643315/css-can-a-div-floatmiddle-rather-than-floatleft-with-margin-left */
+    width: 500px;
+    margin: auto;
+    height: 50px;
+    display: -webkit-box;
+    /* iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* Firefox 19- */
+    display: -ms-flexbox;
+    /* IE 10 */
+    display: -webkit-flex;
+    /* Chrome */
+    display: flex;
+    /* Opera 12.1, Firefox 20+ */
+    /* iOS 6-, Safari 3.1-6 */
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: justify;
+    /* Firefox 19- */
+    -moz-flex-direction: row;
+    -moz-justify-content: space-between;
+    /* Chrome */
+    -webkit-flex-direction: row;
+    -webkit-justify-content: space-between;
+    /* IE10 */
+    -ms-flex-direction: row;
+    -ms-justify-content: space-between;
+    /* Opera 12.1, Firefox 20+ */
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#fire{
+    width: 25%;
+    border-radius: 30px;
+    -webkit-text-stroke: 1px black;
+    font-family: sans;
+    color: red;
+    font-size: 25px;
+    background-image: url("fire.gif");
+    background-color: red;
+}
+
+#earth{
+    width: 25%;
+    border-radius: 30px;
+    -webkit-text-stroke: 1px black;
+    font-family: sans;
+    color: green;
+    font-size: 25px;
+    background-image: url("earth.gif");
+    background-color: green;
+}
+
+#water{
+    width: 25%;
+    border-radius: 30px;
+    -webkit-text-stroke: 1px black;
+    font-family: sans;
+    color: blue;
+    font-size: 25px;
+    background-image: url("water.gif");
+    background-color: blue;
+}
+
+#mainContent h4{
+    text-align: center;
+}
+
+#preImgs{
+    width: 500px;
+    margin: auto;
+    height: 50px;
+    display: -webkit-box;
+    /* iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* Firefox 19- */
+    display: -ms-flexbox;
+    /* IE 10 */
+    display: -webkit-flex;
+    /* Chrome */
+    display: flex;
+    /* Opera 12.1, Firefox 20+ */
+    /* iOS 6-, Safari 3.1-6 */
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: justify;
+    /* Firefox 19- */
+    -moz-flex-direction: row;
+    -moz-justify-content: space-between;
+    /* Chrome */
+    -webkit-flex-direction: row;
+    -webkit-justify-content: space-between;
+    /* IE10 */
+    -ms-flex-direction: row;
+    -ms-justify-content: space-between;
+    /* Opera 12.1, Firefox 20+ */
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#preImgs img{
+    border-image: auto;
+}
